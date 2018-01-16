@@ -63,3 +63,5 @@ In this project is implemented HTTP Api. Application is listening 8000 port. You
         send DELETE request on **/(table name)/(record ID)** or **/(table name)/(field)/(value)** to delete record by ID or by query
 * show all records of table
         send GET request on **/(table name)** to get list of records
+### Backup storage
+If there are no connection to DB app save incoming request (create, update, delete) in dump file ***tmp/dump.json*** and after restoring connection this info will be saved to DB.
