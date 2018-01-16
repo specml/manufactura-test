@@ -43,7 +43,7 @@ class dbEngine {
         });
         auto.run(function (err) { if (err) throw err; });
         this.logger.debug('Sequelize-auto generates models for Sequelize in ' + modelsPath);
-        if fs.existsSync(modelsPath) {
+        if (fs.existsSync(modelsPath)) {
             fs.readdirSync(modelsPath).forEach(file => { require("../" + path.join(modelsPath,file))(sequelize,Sequelize); });
         }
         this.logger.debug('Modules imported in Sequelize');
