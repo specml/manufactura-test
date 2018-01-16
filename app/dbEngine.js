@@ -21,7 +21,7 @@ class dbEngine {
     constructor() { }
     init(logger) {
         this.logger = logger;
-        let  = "tmp/models";
+        let modelsPath  = "tmp/models";
         let sequelize = new Sequelize(
             dbConfig.database,
             dbConfig.username,
