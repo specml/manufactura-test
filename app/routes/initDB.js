@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 
 module.exports = function(app, db) {
     app.get('/initDB', (req, res) => {
-    app.sequelize.define('customers', {
+    db.sequelize.define('customers', {
         code: Sequelize.STRING,
         name: Sequelize.STRING,
         phone: Sequelize.STRING,
@@ -11,7 +11,7 @@ module.exports = function(app, db) {
         closed: Sequelize.BOOLEAN
     }).sync({ force: true });
 
-    app.sequelize.define('orders', {
+    db.sequelize.define('orders', {
         code: Sequelize.STRING,
         custName: Sequelize.STRING,
         transDate: Sequelize.DATEONLY,
@@ -23,7 +23,7 @@ module.exports = function(app, db) {
         closed: Sequelize.BOOLEAN
     }).sync({ force: true });
 
-    app.sequelize.define('currencies', {
+    db.sequelize.define('currencies', {
         code: Sequelize.STRING,
         name: Sequelize.STRING
     }).sync({ force: true });
