@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 
 module.exports = function(app, db) {
-    app.patch('/initDB', (req, res) => {
+    app.get('/initDB', (req, res) => {
     app.sequelize.define('customers', {
         code: Sequelize.STRING,
         name: Sequelize.STRING,

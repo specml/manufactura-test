@@ -46,7 +46,7 @@ Logs are written to a file ***logs.log***. You can change the settings of the lo
 ### API
 In this project is implemented HTTP Api. Application is listening 8000 port. You can use API as follows:
 * initializing DB
-        send PATCH request on **/initDB**
+        send GET request on **/initDB**
 * create records
         send POST request on **/(table name)**, write data in body, ex.:
 
