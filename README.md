@@ -26,15 +26,12 @@ And fill in the required data in the ***./config/db.json***. Structure of the co
             "database": "DBname",
             "host": "127.0.0.1",
             "dialect": "postgres"
-        },
-        "test": {
-            "username": "name",
-            "password": "pass",
-            "database": "DBname",
-            "host": "127.0.0.1",
-            "dialect": "postgres"
         }
     }
+
+---
+OR you can use my DB. Then you need to rename file ***./config/db.json.sample*** to ***./config/db.json***.
+---
 
 Next, set **npm** dependencies
     npm install

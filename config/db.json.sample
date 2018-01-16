@@ -1,9 +1,9 @@
 {
     "development": {
-        "username": "user",
-        "password": "pass",
-        "database": "dbname",
-        "host": "192.168.4.56",
+        "username": "vspivak94",
+        "password": "meloman1994",
+        "database": "manufactura-test",
+        "host": "93.72.190.134",
         "dialect": "postgres"
     }
 }
