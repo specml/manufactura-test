@@ -1,5 +1,5 @@
 # manufactura-test
-This project is the fulfillment of the task <https://github.com/vanuwa/test-database/blob/master/TEST_TASK_DATABASE.md>
+This project is the fulfillment of the task (https://github.com/vanuwa/test-database/blob/master/TEST_TASK_DATABASE.md)
 ---
 ## Used technologies:
 * NodeJS
@@ -14,8 +14,8 @@ The startup requires the following dependencies
 * PostgreSQL
 
 Before starting, you need to create a database and a user in postgres.
-* createdb <databaseName>
-* createuser <userName> -W
+* createdb (databaseName)
+* createuser (userName) -W
 
 And fill in the required data in the ***./config/db.json***. Structure of the config file is as follows:
 
@@ -48,7 +48,7 @@ In this project is implemented HTTP Api. Application is listening 8000 port. You
 * initializing DB
         send PATCH request on **/initDB**
 * create records
-        send POST request on **/<table name>**, write data in body, ex.:
+        send POST request on **/(table name)**, write data in body, ex.:
 
         code    : "VS"
         name    : "Vitalii Spivak"
@@ -56,10 +56,10 @@ In this project is implemented HTTP Api. Application is listening 8000 port. You
         address : "Bucha, Vokzalna st."
 
 * read record
-        send GET request on **/<table name>/<record ID>** or **/<table name>/<field>/<value>** to read record by ID or by query
+        send GET request on **/(table name)/(record ID)** or **/(table name)/(field)/(value)** to read record by ID or by query
 * update record
-        send PUT request on **/<table name>/<record ID>** or **/<table name>/<field>/<value>** to update record by ID or by query, write data to update in body
+        send PUT request on **/(table name)/(record ID)** or **/(table name)/(field)/(value)** to update record by ID or by query, write data to update in body
 * delete record
-        send DELETE request on **/<table name>/<record ID>** or **/<table name>/<field>/<value>** to delete record by ID or by query
+        send DELETE request on **/(table name)/(record ID)** or **/(table name)/(field)/(value)** to delete record by ID or by query
 * show all records of table
-        send GET request on **/<table name>** to get list of records
+        send GET request on **/(table name)** to get list of records
