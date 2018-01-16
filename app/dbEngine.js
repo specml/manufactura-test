@@ -21,7 +21,7 @@ class dbEngine {
     constructor() { }
     init(logger) {
         this.logger = logger;
-        let modelsPath = "tmp/models";
+        let  = "tmp/models";
         let sequelize = new Sequelize(
             dbConfig.database,
             dbConfig.username,
@@ -43,7 +43,9 @@ class dbEngine {
         });
         auto.run(function (err) { if (err) throw err; });
         this.logger.debug('Sequelize-auto generates models for Sequelize in ' + modelsPath);
-        fs.readdirSync(modelsPath).forEach(file => { require("../" + path.join(modelsPath,file))(sequelize,Sequelize); });
+        if fs.existsSync(modelsPath) {
+            fs.readdirSync(modelsPath).forEach(file => { require("../" + path.join(modelsPath,file))(sequelize,Sequelize); });
+        }
         this.logger.debug('Modules imported in Sequelize');
         this.sequelize = sequelize;
         dump.init(this.logger);

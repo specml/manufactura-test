@@ -1,16 +1,16 @@
 {
     "development": {
-        "username": "user",
-        "password": "pass",
-        "database": "DBname",
-        "host": "127.0.0.1",
+        "username": "vspivak94",
+        "password": "meloman1994",
+        "database": "manufactura-test",
+        "host": "192.168.4.56",
         "dialect": "postgres"
     },
     "test": {
-        "username": "name",
-        "password": "pass",
-        "database": "DBname",
-        "host": "127.0.0.1",
+        "username": "vspivak94",
+        "password": "meloman1994",
+        "database": "manufactura-test",
+        "host": "192.168.4.56",
         "dialect": "postgres"
     }
 }
