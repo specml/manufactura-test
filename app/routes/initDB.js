@@ -18,7 +18,7 @@ module.exports = function(app, db) {
         deliveryDate: Sequelize.DATEONLY,
         deliveryAddress: Sequelize.STRING,
         sum: Sequelize.DOUBLE,
-        cyrrency: Sequelize.STRING,
+        currency: Sequelize.STRING,
         approved: Sequelize.BOOLEAN,
         closed: Sequelize.BOOLEAN
     }).sync({ force: true });

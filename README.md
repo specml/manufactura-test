@@ -47,27 +47,27 @@ You should send this request first to initialize DB.
 This request creates tables:
 
         'customers'
-        code :      STRING,
-        name :      STRING,
-        phone :     STRING,
-        address :   STRING,
-        company :   STRING,
-        closed :    BOOLEAN
+        code    : SRTING,
+        name    : SRTING,
+        phone   : SRTING,
+        address : SRTING,
+        company : SRTING,
+        closed  : BOOLEAN
 
         'orders'
-        code :              STRING,
-        custName :          STRING,
-        transDate :         DATEONLY,
-        deliveryDate :      DATEONLY,
-        deliveryAddress :   STRING,
-        sum :               DOUBLE,
-        cyrrency :          STRING,
-        approved :          BOOLEAN,
-        closed :            BOOLEAN
+        code            : SRTING,
+        custName        : SRTING,
+        transDate       : DATEONLY,
+        deliveryDate    : DATEONLY,
+        deliveryAddress : SRTING,
+        sum             : DOUBLE,
+        currency        : SRTING,
+        approved        : BOOLEAN,
+        closed          : BOOLEAN
 
         'currencies'
-        code :	STRING,
-        name :	STRING
+        code : SRTING,
+        name : SRTING
 * create records
 
     send POST request on ***/(table name)*** , write data in body, ex.:
