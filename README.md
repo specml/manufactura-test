@@ -72,9 +72,9 @@ This request creates tables:
         name :	STRING
 * create records
 
-    send POST request on ***/(table name)***, write data in body, ex.:
+    send POST request on ***/(table name)*** , write data in body, ex.:
 
-        POST on ***/customers*** with body:
+        POST on /customers with body:
         code    : "VS"
         name    : "Vitalii Spivak"
         phone   : "+380638708296"
@@ -93,4 +93,4 @@ This request creates tables:
 
     send GET request on ***/(table name)*** to get list of records
 ### Backup storage
-If there are no connection to DB app save incoming request (create, update, delete) in dump file **tmp/dump.json** and after restoring connection this info will be saved to DB.
+If there are no connection to DB app saves incoming request (create, update, delete) in dump file **tmp/dump.json** and after restoring connection this info will be saved to DB.
