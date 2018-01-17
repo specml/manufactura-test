@@ -44,7 +44,30 @@ Logs are written to a file **logs.log**. You can change the settings of the logg
 In this project is implemented HTTP Api. Application is listening 8000 port. You can use API as follows:
 * initializing DB
         send GET request on ***/initDB***
-You should send this request first to initialize DB (create tables 'customers', 'orders', 'currencies').
+You should send this request first to initialize DB.
+This request creates tables
+        'customers'
+        code :      STRING,
+        name :      STRING,
+        phone :     STRING,
+        address :   STRING,
+        company :   STRING,
+        closed :    BOOLEAN
+
+        'orders'
+        code :              STRING,
+        custName :          STRING,
+        transDate :         DATEONLY,
+        deliveryDate :	    DATEONLY,
+        deliveryAddress :   STRING,
+        sum :               DOUBLE,
+        cyrrency :          STRING,
+        approved :          BOOLEAN,
+        closed :            BOOLEAN
+
+        'currencies'
+        code :	STRING,
+        name :	STRING
 * create records
         send POST request on ***/(table name)***, write data in body, ex.:
 
