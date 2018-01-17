@@ -58,7 +58,7 @@ This request creates tables:
         code :              STRING,
         custName :          STRING,
         transDate :         DATEONLY,
-        deliveryDate :	    DATEONLY,
+        deliveryDate :      DATEONLY,
         deliveryAddress :   STRING,
         sum :               DOUBLE,
         cyrrency :          STRING,
