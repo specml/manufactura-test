@@ -36,7 +36,7 @@ Next, set ***npm*** dependencies
 
 Then run the command
     npm run server
----
+***
 Logs are written to a file **logs.log**. You can change the settings of the logger(level) in the file **./config/log.json**.
 ### API
 In this project is implemented HTTP Api. Application is listening 8000 port. You can use API as follows:
