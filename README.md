@@ -32,10 +32,13 @@ And fill in the required data in the **./config/db.json**. Structure of the conf
 OR you can use my DB. Then you need to rename file **./config/db.json.sample** to **./config/db.json**.
 
 Next, set ***npm*** dependencies
+
         npm install
 
 Then run the command
+
         npm run server
+
 ***
 Logs are written to a file **logs.log**. You can change the settings of the logger(level) in the file **./config/log.json**.
 ### API
