@@ -1,5 +1,4 @@
 # manufactura-test
-This project is the fulfillment of the task (https://github.com/vanuwa/test-database/blob/master/TEST_TASK_DATABASE.md)
 ---
 ## Used technologies:
 * NodeJS
